@@ -11,39 +11,43 @@
 // Define class static members
 TeamComponentContainer TeamMember::m_emptyContainer;
 
-TeamMember::TeamMember(std::string name, const QImage & photo)
+TeamMember::TeamMember(std::string name, const QImage & photo) : m_name(name), m_image(photo)
 {
-	// A Completer
+	
 }
 
 TeamMember::TeamMember(const TeamMember & mdd)
 {
-	// A Completer: constructeur de copie
+	m_name = mdd.getName();
+	m_image = mdd.getImage();
+	// A Completer: constructeur de copie *DONE*
 }
 
 TeamMember * TeamMember::clone(void) const
 {
-	// A Completer (créer un nouvel objet identique a this)
+	TeamMember* mdd = new TeamMember(*this);
+
+	// A Completer (créer un nouvel objet identique a this) *DONE*
 }
 
-const QImage & TeamMember::getImage(void) const
+const QImage & TeamMember::getImage(void) const ///Not sure
 {
-	// A Completer
+	return m_image;
 }
 
 QImage & TeamMember::getImage(void)
 {
-	// A Completer
+	return m_image;
 }
 
 std::string TeamMember::getName(void) const
 {
-	// A Completer
+	return m_name;
 }
 
 void TeamMember::setName(std::string name)
 {
-	// A Completer
+	m_name = name;
 }
 
 AbsTeamComponent& TeamMember::addTeamComponent(const AbsTeamComponent&)
