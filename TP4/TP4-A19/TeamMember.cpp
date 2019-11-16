@@ -25,7 +25,7 @@ TeamMember::TeamMember(const TeamMember & mdd)
 
 TeamMember * TeamMember::clone(void) const
 {
-	TeamMember* mdd = new TeamMember(*this);
+	return new TeamMember(*this);
 
 	// A Completer (créer un nouvel objet identique a this) *DONE*
 }
@@ -58,21 +58,25 @@ AbsTeamComponent& TeamMember::addTeamComponent(const AbsTeamComponent&)
 
 TeamComponentIterator TeamMember::begin()
 {
-	// A Completer
+	return m_emptyContainer.begin();
+	// A completer
 }
 
 TeamComponentIterator_const TeamMember::cbegin() const
 {
-	// A Completer
+	return m_emptyContainer.cbegin();
+	// A completer
 }
 
 TeamComponentIterator_const TeamMember::cend() const
 {
+	return m_emptyContainer.cend();
 	// A Completer
 }
 
 TeamComponentIterator TeamMember::end()
 {
+	return m_emptyContainer.end();
 	// A Completer
 }
 
