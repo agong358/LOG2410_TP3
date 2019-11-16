@@ -20,14 +20,11 @@ TeamMember::TeamMember(const TeamMember & mdd)
 {
 	m_name = mdd.getName();
 	m_image = mdd.getImage();
-	// A Completer: constructeur de copie *DONE*
 }
 
 TeamMember * TeamMember::clone(void) const
 {
 	return new TeamMember(*this);
-
-	// A Completer (créer un nouvel objet identique a this) *DONE*
 }
 
 const QImage & TeamMember::getImage(void) const ///Not sure
@@ -59,25 +56,21 @@ AbsTeamComponent& TeamMember::addTeamComponent(const AbsTeamComponent&)
 TeamComponentIterator TeamMember::begin()
 {
 	return m_emptyContainer.begin();
-	// A completer
 }
 
 TeamComponentIterator_const TeamMember::cbegin() const
 {
 	return m_emptyContainer.cbegin();
-	// A completer
 }
 
 TeamComponentIterator_const TeamMember::cend() const
 {
 	return m_emptyContainer.cend();
-	// A Completer
 }
 
 TeamComponentIterator TeamMember::end()
 {
 	return m_emptyContainer.end();
-	// A Completer
 }
 
 void TeamMember::deleteTeamComponent(TeamComponentIterator_const)
