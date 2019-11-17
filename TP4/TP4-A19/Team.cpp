@@ -8,7 +8,7 @@ Team::Team(const Team & mdd)
 	m_image = mdd.getImage();
 
 	for (auto it = mdd.cbegin(); it != mdd.cend; it++) {
-		addTeamComponent(*(it.operator->()->clone()));
+		addTeamComponent(*it));
 	}
 }
 
