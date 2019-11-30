@@ -21,13 +21,15 @@ void TeamImageSizeCalculator::processTeamMember(TeamMember & member)
 	// Recuperer la taille de l'image en bytes
 	// Utiliser QImage::sizeInBytes (pour Qt5.10 et plus) ou
 	//          QImage::byteCount (pour Qt5.9 et moins)
-	m_totalSize += member.getImage().sizeInBytes();
+	
+	m_totalSize += member.getImage().byteCount();
+
 }
 
 void TeamImageSizeCalculator::processTeamMemberRole(TeamMemberRole & member)
 {
-	// Deleguer la recuperation de la taille de l'image au membre
-	processTeamMember(dynamic_cast<TeamMember &>(member.getMember()));
+	// Deleguer la recuperation de la taille de l'image au membre *DONE?
+	m_totalSize += member.getImage().byteCount();
 }
 
 void TeamImageSizeCalculator::processTeam(Team & team)
@@ -41,6 +43,7 @@ void TeamImageSizeCalculator::processTeam(Team & team)
 size_t TeamImageSizeCalculator::getTotalSize(void) const
 {
 	// Retourner la taille totale calculee
+
 	return m_totalSize;
 }
 
