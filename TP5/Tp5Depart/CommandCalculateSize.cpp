@@ -23,15 +23,18 @@ void CommandCalculateSize::cancel()
 void CommandCalculateSize::execute()
 {
 	// Construire un visiteur de calcul de taille et l'appliquer a la composante
+
 }
 
 void CommandCalculateSize::clearSize(void)
 {
 	// Reinitialiser la taille totale
+
 }
 
 size_t CommandCalculateSize::getSize(void) const
 {
-	// Retourner la taille totale calculee
-	return 0;
+
+	// Retourner la taille totale calculee *DONE
+	return m_computedSize;
 }

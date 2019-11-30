@@ -1,1 +1,55 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.Cpp.WindowsSDK.targets(46,5): error MSB8036: le SDK Windows version 10.0.17134.0 est introuvable. Installez la version nécessaire du SDK Windows, ou changez la version du SDK dans les pages de propriétés du projet. Vous pouvez également cliquer avec le bouton droit sur la solution, et sélectionner "Recibler la solution".
+﻿  Team.cpp
+c:\université\log2410\log2410_tp3\tp4\tp4-a19\team.cpp(10): error C3867: 'Team::cend': non-standard syntax; use '&' to create a pointer to member
+c:\université\log2410\log2410_tp3\tp4\tp4-a19\team.cpp(10): error C2678: binary '!=': no operator found which takes a left-hand operand of type 'TeamComponentIterator_const' (or there is no acceptable conversion)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\list(246): note: could be 'bool std::_List_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>>::operator !=(const std::_List_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>> &) const'
+          with
+          [
+              _Ty=TeamComponentPtr
+          ]
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qrect.h(865): note: or       'bool operator !=(const QRectF &,const QRectF &) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qrect.h(459): note: or       'bool operator !=(const QRect &,const QRect &) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qpoint.h(358): note: or       'bool operator !=(const QPointF &,const QPointF &)'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qpoint.h(166): note: or       'bool operator !=(const QPoint &,const QPoint &)'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qsize.h(342): note: or       'bool operator !=(const QSizeF &,const QSizeF &) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qsize.h(172): note: or       'bool operator !=(const QSize &,const QSize &) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qmargins.h(380): note: or       'bool operator !=(const QMarginsF &,const QMarginsF &) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qmargins.h(144): note: or       'bool operator !=(const QMargins &,const QMargins &) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1785): note: or       'bool operator !=(const QByteArray &,const QStringRef &)'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1778): note: or       'bool operator !=(const QStringRef &,const QByteArray &)'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1769): note: or       'bool operator !=(QLatin1String,QStringView) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1762): note: or       'bool operator !=(QStringView,QLatin1String) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1754): note: or       'bool operator !=(QChar,QStringView) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1747): note: or       'bool operator !=(QStringView,QChar) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1739): note: or       'bool operator !=(QStringView,QStringView) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1731): note: or       'bool operator !=(QLatin1String,QChar) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1726): note: or       'bool operator !=(QChar,QLatin1String) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1712): note: or       'bool operator !=(const QStringRef &,QChar) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1707): note: or       'bool operator !=(QChar,const QStringRef &) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1693): note: or       'bool operator !=(const QString &,QChar) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1688): note: or       'bool operator !=(QChar,const QString &) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1674): note: or       'bool operator !=(const QStringRef &,QLatin1String) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1667): note: or       'bool operator !=(QLatin1String,const QStringRef &) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1638): note: or       'bool operator !=(const QStringRef &,const QString &) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1631): note: or       'bool operator !=(const QString &,const QStringRef &) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1619): note: or       'bool operator !=(const QStringRef &,const QStringRef &) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1265): note: or       'bool operator !=(const char *,QLatin1String)'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1208): note: or       'bool operator !=(QLatin1String,QLatin1String) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1203): note: or       'bool operator !=(const QString &,QString::Null)'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1201): note: or       'bool operator !=(QString::Null,const QString &)'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1199): note: or       'bool operator !=(QString::Null,QString::Null)'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1807): note: or       'bool operator !=(const char *,const QStringRef &)'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qstring.h(1252): note: or       'bool operator !=(const char *,const QString &)'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qbytearray.h(630): note: or       'bool operator !=(const char *,const QByteArray &) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qbytearray.h(628): note: or       'bool operator !=(const QByteArray &,const char *) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qbytearray.h(626): note: or       'bool operator !=(const QByteArray &,const QByteArray &) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qchar.h(619): note: or       'bool operator !=(std::nullptr_t,QChar) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qchar.h(614): note: or       'bool operator !=(QChar,std::nullptr_t) noexcept'
+  c:\qt\5.12.2\msvc2017_64\include\qtcore\qchar.h(603): note: or       'bool operator !=(QChar,QChar) noexcept'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\exception(336): note: or       'bool std::operator !=(const std::exception_ptr &,const std::exception_ptr &) noexcept' [found using argument-dependent lookup]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\exception(341): note: or       'bool std::operator !=(std::nullptr_t,const std::exception_ptr &) noexcept' [found using argument-dependent lookup]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\exception(346): note: or       'bool std::operator !=(const std::exception_ptr &,std::nullptr_t) noexcept' [found using argument-dependent lookup]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\system_error(291): note: or       'bool std::operator !=(const std::error_code &,const std::error_code &) noexcept' [found using argument-dependent lookup]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\system_error(296): note: or       'bool std::operator !=(const std::error_code &,const std::error_condition &) noexcept' [found using argument-dependent lookup]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\system_error(301): note: or       'bool std::operator !=(const std::error_condition &,const std::error_code &) noexcept' [found using argument-dependent lookup]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\system_error(306): note: or       'bool std::operator !=(const std::error_condition &,const std::error_condition &) noexcept' [found using argument-dependent lookup]
+  c:\université\log2410\log2410_tp3\tp4\tp4-a19\team.cpp(10): note: while trying to match the argument list '(TeamComponentIterator_const, overloaded-function)'
