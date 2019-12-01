@@ -23,18 +23,21 @@ void CommandCalculateSize::cancel()
 void CommandCalculateSize::execute()
 {
 	// Construire un visiteur de calcul de taille et l'appliquer a la composante
+	auto *visitor = new TeamImageSizeCalculator();
 
+	m_computedSize = (*visitor).getTotalSize();
+	m_target.accept(*visitor);
 }
 
 void CommandCalculateSize::clearSize(void)
 {
 	// Reinitialiser la taille totale
+	m_computedSize = 0;
 
 }
 
 size_t CommandCalculateSize::getSize(void) const
 {
-
 	// Retourner la taille totale calculee *DONE
 	return m_computedSize;
 }

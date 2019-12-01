@@ -28,22 +28,22 @@ void TeamImageSizeCalculator::processTeamMember(TeamMember & member)
 
 void TeamImageSizeCalculator::processTeamMemberRole(TeamMemberRole & member)
 {
-	// Deleguer la recuperation de la taille de l'image au membre *DONE?
-	m_totalSize += member.getImage().byteCount();
+	// Deleguer la recuperation de la taille de l'image au membre 
+	processTeamMember(dynamic_cast<TeamMember &>(member.getMember()));
 }
 
 void TeamImageSizeCalculator::processTeam(Team & team)
 {
 	// Pour traiter une equipe, on itere sur tous les membres
-	for (TeamComponentIterator iterator = team.begin(); iterator != team.end(); ++iterator) {
-		iterator->accept(*this);
+	for (auto it = team.begin(); it != team.end(); it++) 
+	{
+		(*it).accept(*this);
 	}
 }
 
 size_t TeamImageSizeCalculator::getTotalSize(void) const
 {
 	// Retourner la taille totale calculee
-
 	return m_totalSize;
 }
 
